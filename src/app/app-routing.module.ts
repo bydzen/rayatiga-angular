@@ -5,8 +5,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { CareerComponent } from './pages/career/career.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectComponent } from './pages/project/project.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { ArticleDetailsService } from './services/article-details.service';
 
 const routes: Routes = [
   {
@@ -33,11 +31,6 @@ const routes: Routes = [
     path: 'project',
     component: ProjectComponent,
     title: 'Project',
-  },
-  {
-    path: 'project/:slug',
-    component: ProjectsComponent,
-    title: 'Projects',
   },
 ];
 

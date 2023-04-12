@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ArticleDetailsService } from 'src/app/services/article-details.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +6,4 @@ import { ArticleDetailsService } from 'src/app/services/article-details.service'
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  constructor(private service: ArticleDetailsService) {}
-  articleData: any;
-  ngOnInit(): void {
-    this.articleData = this.service.articleDetails;
-  }
 }
