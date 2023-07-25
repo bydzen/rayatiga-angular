@@ -1,0 +1,6 @@
+.background-home {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(var(--bg-header), var(--bg-header)), url(/assets/img/home.webp);
+}

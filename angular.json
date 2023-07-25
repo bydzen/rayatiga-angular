@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rayatiga-angular": {
+    "learn-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rayatiga-angular",
+            "outputPath": "dist/learn-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -60,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "rayatiga-angular:build:production"
+              "browserTarget": "learn-angular:build:production"
             },
             "development": {
-              "browserTarget": "rayatiga-angular:build:development"
+              "browserTarget": "learn-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rayatiga-angular:build"
+            "browserTarget": "learn-angular:build"
           }
         },
         "test": {
@@ -96,6 +100,6 @@
     }
   },
   "cli": {
-    "analytics": "c562cbbe-b7dc-4da2-ac04-9155b6a9d346"
+    "analytics": false
   }
 }

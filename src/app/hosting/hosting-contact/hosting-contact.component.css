@@ -1,0 +1,6 @@
+.background-contact {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(var(--bg-header), var(--bg-header)), url(/assets/img/contact.webp);
+}
